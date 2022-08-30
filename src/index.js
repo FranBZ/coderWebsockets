@@ -24,10 +24,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/api/productos', router)
 
-app.get('/', (req, res) => {
-  res.render('chat')
-})
-
 app.get('/productos', (req, res) => {
   res.render('form')
 })
